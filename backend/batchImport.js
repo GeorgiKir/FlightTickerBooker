@@ -20,36 +20,8 @@ Object.keys(flights).forEach((item) => {
   flightList.push(flightObj);
 });
 
-// let flightObj = {};
-//   flightObj[item] = {
-//     _id: item,
-//     flight: item,
-//     seats: flights[item],
-//   };
-
-// console.log(flightList);
-// for (let i = 0; i < Object.keys(flights).length; i++) {
-//   flightList[Object.keys(flights)[i]] = {
-//     _id: Object.keys(flights)[i],
-//     flight: Object.keys(flights)[i],
-//     seats: flights[Object.keys(flights)[i]],
-//   };
-// }
-console.log(flightList);
-
 const batchImport = async () => {
   const client = new MongoClient(MONGO_URI, options);
-  // try {
-  //   await client.connect();
-  //   const db = client.db("SlingAir");
-  //   await db.collection("reservations").insertMany(reservations);
-  //   console.log("SUCCESS!");
-  // } catch (err) {
-  //   console.log(err.stack);
-  // } finally {
-  //   await client.close();
-  //   console.log("disconnected!");
-  // }
 
   try {
     await client.connect();
