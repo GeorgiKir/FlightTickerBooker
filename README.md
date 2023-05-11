@@ -1,8 +1,6 @@
 # FlightTickerBooker
 
-<video width="600" height="300" controls>
-   <source type="video/mp4" src="frontend/src/assets/slingairVideo.mp4" />
-</video>
+<img src="frontend/src/assets/slingairGif.gif">
 
 ## Technologies used
 
